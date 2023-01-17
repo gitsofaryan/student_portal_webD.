@@ -1,0 +1,884 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+<title>Gyan Ganga Institute of Technology & Science Jabalpur (M.P.)</title>
+<link rel="icon" href="glogo.jpg"/>
+<link rel="stylesheet" href="css/content.css"/>
+<!--fav-icon-->
+
+<style>
+    /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 400px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+  
+    <section class="main" style="background-image: url(images/6936002.jpg); background-size:cover;">
+        
+        <nav>
+            <a href="#" class="logo">
+                <img src="images/g.png" width="370px" style="padding: 10px;"/>
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu" style="border-radius: 5px;">
+                <li><a href="#">About</a></li>
+                <li><a href="#information">Information</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#announcements">Announcements</a></li>
+                <li><a class="active" onclick="document.getElementById('id01').style.display='block'" style="width:auto; border-radius: 5px; cursor: pointer;">Login</a></li>
+            </ul>
+        </nav>
+       
+        <!-- login modal start -->
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post" style="
+            width: 400px;
+        ">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <p style="font-size: 22px;">Student Login </p>
+                <hr>
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#">Register Here</a></span>
+                <span class="psw" style="margin-right: 11px;"><a href="#">Forgot  password?</a></span>
+              </div>
+            </form>
+          </div>
+        <!-- login modal end  -->
+
+
+        <!--main-content-->
+        <div class="home-content">
+            
+            <!--text-->
+            <div class="home-text" >
+                
+                <h3 style="color: white; letter-spacing: 3px;margin-bottom: 40px;font-size: 22px;">Welcome to GGITS College</h3>
+                <h1 style="color: white; font-size: 67px;margin-bottom: 20px;font-style: oblique;"> Student Portal</h1>
+                <p style="color: white;margin-bottom: 17px;font-style: italic;
+                font-size: 17px;">The purpose of College is to prepare students with promise
+                    to enhance their intellectual, physical, social, emotional, spiritual,
+                    and artistic growth so that they may realize their power for good
+                    as citizens</p>
+            <!--login-btn-->
+            <a href="#" class="main-login" style="border-radius: 5px;">Apply Now</a>
+            </div>
+            <!--img-->
+            <div class="home-img" style="width: 500px;">
+                <img src="images/ggits-bg.jpg" width="480px" style="text-shadow: 20px 22px; border-radius: 50%;"/>
+                <marquee width="100%" direction="left" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                    <a href="#" style="color: white;">Stream:- Department of Engenering(CSE, ECS, EE, ME, EX, IT, CIVIL), Department of MCA, Department of MBA, Department of Pharmacy.</a>
+                    </marquee>
+                    <marquee width="100%" direction="right" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                    <a href="#" style="color: white;">Conceiving world – class Education, Ethics and Employability for students in global perspective.</a>
+                    </marquee>
+            </div>
+            
+        </div>
+        
+        <!--arrow-->
+        <div class="arrow"></div>
+        <span class="scroll" style="color: #00ffff82">Scroll</span>
+    </section>
+    
+    <!--services----------------------->
+    <section class="services">
+        <!--heading----------->
+        <div class="services-heading">
+            <h2>OUR PROFESSIONAL COURSES</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+        </div>
+        <!--box-container----------------->
+        <div class="box-container">
+            <!--box-1-------->
+            <div class="box">
+                <img src="images/icon5.png">
+                <font>Bachelor of Technology (B.Tech)</font>
+                <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+                <!--btn--------->
+                <a href="#">Apply Now</a>
+            </div>
+            <!--box-2-------->
+            <div class="box">
+                <img src="images/icon5.png">
+                <font>Masters In Computer Application (MCA)</font>
+                <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua.</p>
+                <!--btn--------->
+                <a href="#">Apply Now</a>
+            </div>
+            <!--box-3-------->
+            <div class="box">
+                <img src="images/icon5.png">
+                <font>Master of Business Administration (MBA)</font>
+                <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+                <!--btn--------->
+                <a href="#">Apply Now</a>
+            </div>
+            <!--box-4-------->
+            <div class="box">
+                <img src="images/icon5.png">
+                <font>Department of Pharmacy</font>
+                <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua.</p>
+                <!--btn--------->
+                <a href="#">Apply Now</a>
+            </div>
+            <!--box-1-------->
+            
+        </div>
+    </section>
+    
+    <div class="info-page" id="information">
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          color: #f5f5f5e0;
+          background-image: url(34372.jpg);
+        }
+        header {
+          background-color: #ffffffb3;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px;
+          border-radius: 50px;
+          margin-top: 15px;
+        }
+        h1 {
+          margin: 0;
+          margin-left: 100px;
+          font-size: 35px;
+          font-family: c;
+          color: black;
+        }
+        nav {
+          display: flex;
+        }
+        nav ul {
+          list-style: none;
+          display: flex;
+          margin: 0;
+          padding: 0;
+        }
+        nav li {
+          margin: 0 20px;
+        }
+        nav a {
+          text-decoration: none;
+          color: black;
+        }
+        nav a:hover {
+          color: gray;
+        }
+        main {
+          margin: 20px;
+        }
+        h2 {
+          margin: 50px 0 20px;
+          text-align: center;
+        }
+        .student {
+          border: 2px solid lightgray;
+          margin-bottom: 20px;
+          padding: 20px;
+          border-radius: 20px;
+          font-family: f;
+        }
+        .student h3 {
+          margin: 0 0 10px;
+        }
+        .student p {
+          margin: 0;
+        }
+      </style>
+    </head>
+    <body>
+      <main>
+        <h2 style="font-size: 45px;font-family: monospace;">STUDENTS</h2>
+        <div class="student">
+          <h3>John Doe</h3>
+          <p>ID: 12345</p>
+          <p>Email: john.doe@example.com</p>
+          <p>Phone: 555-555-5555</p>
+        </div>
+        <div class="student">
+          <h3>Jane Smith</h3>
+          <p>ID: 67890</p>
+          <p>Email: jane.smith@example.com</p>
+          <p>Phone: 555-555-5556</p>
+        </div>
+        <div class="student">
+          <h3>Bob Johnson</h3>
+          <p>ID: 24680</p>
+          <p>Email: bob.johnson@example.com</p>
+          <p>Phone: 555-555-5557</p>
+        </div>
+        <div class="student">
+          <h3>Bob Marly</h3>
+          <p>ID: 24681</p>
+          <p>Email: bob.marly@example.com</p>
+          <p>Phone: 555-555-5558</p>
+        </div>
+      </main>
+    </div>
+    <div class="reso-page" id="resources">
+      <style>
+        *,
+    *::before,
+    *::after {
+    
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Roboto, -apple-system, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+      background: #3b4465;
+    }
+    
+    .forms-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .section-title {
+      font-size: 32px;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+    
+    .forms {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 30px;
+    }
+    
+    .form-wrapper {
+      animation: hideLayer .3s ease-out forwards;
+    }
+    
+    .form-wrapper.is-active {
+      animation: showLayer .3s ease-in forwards;
+    }
+    
+    @keyframes showLayer {
+      50% {
+        z-index: 1;
+      }
+      100% {
+        z-index: 1;
+      }
+    }
+    
+    @keyframes hideLayer {
+      0% {
+        z-index: 1;
+      }
+      49.999% {
+        z-index: 1;
+      }
+    }
+    
+    .switcher {
+      position: relative;
+      cursor: pointer;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0;
+      text-transform: uppercase;
+      font-family: inherit;
+      font-size: 16px;
+      letter-spacing: .5px;
+      color: #999;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      transform: translateX(0);
+      transition: all .3s ease-out;
+    }
+    
+    .form-wrapper.is-active .switcher-login {
+      color: #fff;
+      transform: translateX(90px);
+    }
+    
+    .form-wrapper.is-active .switcher-signup {
+      color: #fff;
+      transform: translateX(-90px);
+    }
+    
+    .underline {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      overflow: hidden;
+      pointer-events: none;
+      width: 100%;
+      height: 2px;
+    }
+    
+    .underline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: inherit;
+      display: block;
+      width: inherit;
+      height: inherit;
+      background-color: currentColor;
+      transition: transform .2s ease-out;
+    }
+    
+    .switcher-login .underline::before {
+      transform: translateX(101%);
+    }
+    
+    .switcher-signup .underline::before {
+      transform: translateX(-101%);
+    }
+    
+    .form-wrapper.is-active .underline::before {
+      transform: translateX(0);
+    }
+    
+    .form {
+      overflow: hidden;
+      min-width: 260px;
+      margin-top: 50px;
+      padding: 30px 25px;
+      border-radius: 5px;
+      transform-origin: top;
+    }
+    
+    .form-login {
+      animation: hideLogin .3s ease-out forwards;
+    }
+    
+    .form-wrapper.is-active .form-login {
+      animation: showLogin .3s ease-in forwards;
+    }
+    
+    @keyframes showLogin {
+      0% {
+        background: #d7e7f1;
+        transform: translate(40%, 10px);
+      }
+      50% {
+        transform: translate(0, 0);
+      }
+      100% {
+        background-color: #fff;
+        transform: translate(35%, -20px);
+      }
+    }
+    
+    @keyframes hideLogin {
+      0% {
+        background-color: #fff;
+        transform: translate(35%, -20px);
+      }
+      50% {
+        transform: translate(0, 0);
+      }
+      100% {
+        background: #d7e7f1;
+        transform: translate(40%, 10px);
+      }
+    }
+    
+    .form-signup {
+      animation: hideSignup .3s ease-out forwards;
+    }
+    
+    .form-wrapper.is-active .form-signup {
+      animation: showSignup .3s ease-in forwards;
+    }
+    
+    @keyframes showSignup {
+      0% {
+        background: #d7e7f1;
+        transform: translate(-40%, 10px) scaleY(.8);
+      }
+      50% {
+        transform: translate(0, 0) scaleY(.8);
+      }
+      100% {
+        background-color: #fff;
+        transform: translate(-35%, -20px) scaleY(1);
+      }
+    }
+    
+    @keyframes hideSignup {
+      0% {
+        background-color: #fff;
+        transform: translate(-35%, -20px) scaleY(1);
+      }
+      50% {
+        transform: translate(0, 0) scaleY(.8);
+      }
+      100% {
+        background: #d7e7f1;
+        transform: translate(-40%, 10px) scaleY(.8);
+      }
+    }
+    
+    .form fieldset {
+      position: relative;
+      opacity: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: all .3s ease-out;
+    }
+    
+    .form-login fieldset {
+      transform: translateX(-50%);
+    }
+    
+    .form-signup fieldset {
+      transform: translateX(50%);
+    }
+    
+    .form-wrapper.is-active fieldset {
+      opacity: 1;
+      transform: translateX(0);
+      transition: opacity .4s ease-in, transform .35s ease-in;
+    }
+    
+    .form legend {
+      position: absolute;
+      overflow: hidden;
+      width: 1px;
+      height: 1px;
+      clip: rect(0 0 0 0);
+    }
+    
+    .input-block {
+      margin-bottom: 20px;
+    }
+    
+    .input-block label {
+      font-size: 14px;
+      color: #a1b4b4;
+    }
+    
+    .input-block input {
+      display: block;
+      width: 100%;
+      margin-top: 8px;
+      padding-right: 15px;
+      padding-left: 15px;
+      font-size: 16px;
+      line-height: 40px;
+      color: #3b4465;
+      background: #eef9fe;
+      border: 1px solid #cddbef;
+      border-radius: 2px;
+    }
+    
+    .form [type='submit'] {
+      opacity: 0;
+      display: block;
+      min-width: 120px;
+      margin: 30px auto 10px;
+      font-size: 18px;
+      line-height: 40px;
+      border-radius: 25px;
+      border: none;
+      transition: all .3s ease-out;
+    }
+    
+    .form-wrapper.is-active .form [type='submit'] {
+      opacity: 1;
+      transform: translateX(0);
+      transition: all .4s ease-in;
+    }
+    
+    .btn-login {
+      color: #fbfdff;
+      background: #a7e245;
+      transform: translateX(-30%);
+    }
+    
+    .btn-signup {
+      color: #a7e245;
+      background: #fbfdff;
+      box-shadow: inset 0 0 0 2px #a7e245;
+      transform: translateX(30%);
+    }
+    </style>
+    <body>
+        <div class="alignform">
+    
+        <section class="forms-section">
+      <h1 class="section-title" style="margin-top: 150px;">Resources</h1>
+      <div class="forms">
+        <div class="form-wrapper is-active">
+          <button type="button" class="switcher switcher-login">
+           NOTES
+            <span class="underline"></span>
+          </button>
+          <form class="form form-login">
+            <fieldset>
+      
+            <legend></legend>
+              <div class="input-block">
+                <label for="login-email">BRANCH</label>
+                <input id="login-email" type="email" required>
+              </div>
+              <div class="input-block">
+                <label for="login-password">SEMESTER</label>
+                <input id="login-password" type="password" required>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn-login">SEARCH NOTES</button>
+          </form>
+        </div>
+        <div class="form-wrapper">
+          <button type="button" class="switcher switcher-signup">
+            PYQ
+            <span class="underline"></span>
+          </button>
+          <form class="form form-signup">
+            <fieldset>
+              <legend></legend>
+              <div class="input-block">
+                <label for="signup-email">SUBJECT NAME</label>
+                <input id="signup-email" type="email" required>
+              </div>
+              <div class="input-block">
+                <label for="signup-password">SEMESTER</label>
+                <input id="signup-password" type="password" required>
+              </div>
+              <div class="input-block">
+                <label for="signup-password-confirm">YEAR</label>
+                <input id="signup-password-confirm" type="password" required>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn-signup">Continue</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    </body>
+    <script>
+        const switchers = [...document.querySelectorAll('.switcher')]
+    
+    switchers.forEach(item => {
+      item.addEventListener('click', function() {
+        switchers.forEach(item => item.parentElement.classList.remove('is-active'))
+        this.parentElement.classList.add('is-active')
+      })
+    })
+    
+    </script>    
+    </div>
+    <div class="anno-page" id="announcements">
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          background-image: url(ba.jpg);
+          background-size: cover;
+          color: antiquewhite;
+        }
+        header {
+          background-color: rgba(211, 211, 211, 0.833);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px;
+          border-radius: 50px;
+          margin-top: 15px;
+        }
+        h1 {
+          margin: 0;
+          margin-left: 100px;
+          font-size: 35px;
+          font-family: c;
+          color: black;
+        }
+        nav {
+          display: flex;
+        }
+        nav ul {
+          list-style: none;
+          display: flex;
+          margin: 0;
+          padding: 0;
+        }
+        nav li {
+          margin: 0 20px;
+        }
+        nav a {
+          text-decoration: none;
+          color: black;
+        }
+        nav a:hover {
+          color: gray;
+        }
+        main {
+          margin: 20px;
+        }
+        h2 {
+          margin: 50px 0 20px;
+          text-align: center;
+        }
+        .announcement {
+          border: 2px solid lightgray;
+          margin-bottom: 20px;
+          padding: 20px;
+          border-radius: 20px;
+        }
+        .announcement h3 {
+          margin: 0 0 10px;
+        }
+        .announcement p {
+          margin: 0;
+        }
+        .flip-card{
+          background-color: transparent;
+          width: 500px;
+          height: 500px;
+          perspective: 1000px;
+          margin-left: 500px;
+          padding: 7px !important;
+        }
+        .flip-inner{
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-inner{
+          transform: rotateY(180deg);
+        }
+        .flip-back{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          border-radius: 16px;
+        }
+        .flip-front{
+          background-image: linear-gradient(45deg, #6f04d9, #d9048e);
+          border-radius: 15px;
+        }
+        .flip-front img{
+          width: 220px;
+          margin-top: 1rem;
+        }
+        .flip-back{
+          background-image: linear-gradient(315deg, #6f04d9, #8a045c);
+          color: #ffffff;
+          transform: translateY(180deg);
+        }
+        .flip-back img{
+          width: 375px;
+          margin-top: 4rem;
+          border-radius: 20px;
+        }
+        .flip-back h3{
+          margin-bottom: 0.3rem;
+          margin-top: 26px;
+          font-size: 55px;
+          font-variant: petite-caps;
+        }
+        .flip-back h1{
+          margin: 0;
+          margin-top: 0px;
+        }
+    
+    
+    
+      </style>
+    </head>
+    <body>
+    
+      <main>
+        <h2 style="font-size: 45px;font-family: monospace;">Announcements</h2>
+        <div class="announcement">
+          <h3>Announcement</h3>
+          <p>GGITS is Celebrating Gyanmotsav.</p>
+        </div>
+        <div class="flip-card">
+          <div class="flip-inner">
+           
+            <div class="flip-back">
+              <img src="gmohostav.jpg" alt="">
+              <h3>Welcome</h3>
+              <h1>To Gyanmotsav 2023</h1>
+            </div>
+          </div>
+        </div>
+            
+      </main>
+    </div>
+       <!--footer------------->
+       <footer>
+        <p>Copyright (C) - 2023 | Developed By <a href="">Sujal Jain & Aryan Jain </a> </p>
+    </footer>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+</body>
+
+</html>
